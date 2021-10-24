@@ -1,1 +1,1 @@
-import { ref, reactive } from './reactivity';
+export * from '@vue/reactivity';

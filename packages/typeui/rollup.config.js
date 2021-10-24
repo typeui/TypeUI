@@ -2,6 +2,7 @@ import typescript from '@rollup/plugin-typescript';
 
 export default [
 	{
+		external: ['@vue/reactivity'],
 		input: 'src/index.ts',
 		output: {
 			file: 'lib/cjs/index.js',
@@ -10,6 +11,7 @@ export default [
 		plugins: [typescript({ tsconfig: './tsconfig.json' })],
 	},
 	{
+		external: ['@vue/reactivity'],
 		input: 'src/index.ts',
 		output: {
 			file: 'lib/esm/index.js',
